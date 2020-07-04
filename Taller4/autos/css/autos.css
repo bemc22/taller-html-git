@@ -80,7 +80,7 @@ input[type=number] {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background: #512da8 ;
   width: 100%;
   border: 0px ;
   padding: 15px;
@@ -100,7 +100,7 @@ div.conjunto {
 .form select {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  background: #4CAF50;
+  background: #512da8 ;
   border: 0;
   margin: 0 0 10px;
   padding: 8px;
@@ -113,11 +113,11 @@ div.conjunto {
 
 
 body {
-  background: #76b852; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-  background: -moz-linear-gradient(right, #76b852, #8DC26F);
-  background: -o-linear-gradient(right, #76b852, #8DC26F);
-  background: linear-gradient(to left, #76b852, #8DC26F);
+  background: #4fc3f7 ; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right,#4fc3f7 , #7e57c2 );
+  background: -moz-linear-gradient(right, #4fc3f7 , #7e57c2 );
+  background: -o-linear-gradient(right, #4fc3f7 , #7e57c2 );
+  background: linear-gradient(to left, #4fc3f7 , #7e57c2);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
