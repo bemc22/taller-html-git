@@ -9,12 +9,11 @@
 <body>
   <div class="login-page">
     <div class="form">
-
-    <p>Formulario Autos</p>
+    <p class="titulo">Formulario Autos</p>
 
       <form class="login-form">
 
-      <div class="desplegables">
+      <div class="conjunto">
         <select name="select">
           <option  selected>Combustible</option>
           <option >Gasoleo</option>
@@ -25,32 +24,58 @@
 
         <select name="select">
           <option value="" selected>Tipo</option>
-
+          <option >Urbano</option>
+          <option >Subcompacto</option>
+          <option >Familiar</option>
         </select>
 
         <select name="select">
           <option selected>Estado</option>
-
+          <option >Nuevo</option>
+          <option >Usado</option>
 
         </select>
 
         <select name="select">
           <option value="" selected>Marca</option>
+          <option >BMW</option>
+          <option>Ferrari</option>
+          <option >Tesla</option>
+          <option >Ford</option>
         </select>
 
           </div>
 
-          <input type="text" placeholder="username"/>
-          <input type="password" placeholder="password"/>
+          <div class="conjunto2">
+            <input type="text" placeholder="Modelo"/>
+            <input type="number" placeholder="Año"/>
+          </div>
+
+
+
+          <input type="text" placeholder="Detalle"/>
+          <input type="number" placeholder="Caja"/>
+          <input type="number" placeholder="Motor"/>
+          <p class="subtitulo">Fecha publicación</p>
+          <input type="date" placeholder="Fecha publicación"/>
+
+          <div class="conjunto3">
+
+            <input type="number" placeholder="Precio" id="precio"/>
+            <select name="select" id="moneda">
+              <option selected>Moneda</option>
+              <option >USD</option>
+              <option >COP</option>
+            </select>
+          </div>
+          <p class="subtitulo">Descripción</p>
+          <textarea name="name" id="desc"></textarea>
+
           <button>Enviar</button>
 
+
         </form>
-
-
-
-
-
-    </div>
+      </div>
   </div>
 </body>
 </html>
