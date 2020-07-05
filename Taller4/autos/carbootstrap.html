@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="./css/carbootstrap.css">
+  <title>Autos</title>
+</head>
+<body>
+  <div class="container" >
+    <div class="row">
+      <h1 class="text-center">Formulario Autos</h1>
+      <div class="login-wrap">
+
+        <form class="form-horizontal" role="form">
+
+          <div class="form-group text-center">
+
+              <select class="btn btn-sm btn-success dropdown">
+                <option  selected>Combustible</option>
+                <option >Gasoleo</option>
+                <option >Diesel</option>
+                <option >Biodiesel</option>
+
+              </select>
+
+              <select class="btn  btn-sm btn-success dropdown">
+                <option value="" selected>Tipo</option>
+                <option >Urbano</option>
+                <option >Subcompacto</option>
+                <option >Familiar</option>
+              </select>
+
+              <select class="btn btn-sm btn-success dropdown">
+                <option selected>Estado</option>
+                <option >Nuevo</option>
+                <option >Usado</option>
+
+              </select>
+
+              <select class="btn  btn-sm  btn-success dropdown">
+                <option value="" selected>Marca</option>
+                <option >BMW</option>
+                <option>Ferrari</option>
+                <option >Tesla</option>
+                <option >Ford</option>
+              </select>
+
+          </div>
+
+        <div class="form-group text-center">
+          <div class=" col-sm-6 pr-1">
+                <input type="text" class="form-control " id="inputText" placeholder="Modelo" required>
+          </div>
+          <div class=" col-sm-6 pl-1">
+                <input type="number" class="form-control" id="inputText" placeholder="Año" required>
+          </div>
+        </div>
+
+        <div class="form-group ">
+          <div class=" col-sm-12">
+                <input type="text" class="form-control " id="inputText" placeholder="Detalle" required>
+          </div>
+        </div>
+
+        <div class="form-group ">
+          <div class=" col-sm-12">
+                <input type="text" class="form-control " id="inputText" placeholder="Caja" required>
+          </div>
+        </div>
+
+        <div class="form-group ">
+          <div class=" col-sm-12">
+                <input type="text" class="form-control " id="inputText" placeholder="Motor" required>
+          </div>
+        </div>
+
+
+        <div class="form-group marg-0">
+          <label for="inputPassword3" class="col-sm-5 control-label"  style="text-align: left;">
+            Fecha publicación</label>
+
+
+
+            <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker2'>
+                    <input type='text' class="form-control"placeholder="dd/mm/aaaa"/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+          </div>
+      </div>
+
+        <div class="form-group ">
+          <div class=" col-sm-9 pr-1 ">
+                <input type="number" class="form-control " id="inputText" placeholder="Precio" required>
+          </div>
+          <div class=" col-sm-3 pl-1">
+            <select class="btn  btn-sm btn-success dropdown pl-td  ">
+              <option value="" selected>Moneda</option>
+              <option >USD</option>
+              <option >COP</option>
+
+            </select>
+        </div>
+      </div>
+
+        <div class="form-group ">
+          <label for="inputPassword3" class="col-sm-5 control-label text-left" style="text-align: left;" >Descripción</label>
+        </div>
+
+        <div class="form-group ">
+          <div class="col-sm-12">
+            <textarea class="form-control col-sm-4" rows="4" cols="1" id="desc"></textarea>
+          </div>
+
+        </div>
+
+
+          <div class="form-group text-center">
+            <div class="col-mm-4 center-block">
+              <button type="submit" class="btn btn-success btn-sm" style="padding: 4px 30px 4px 30px;">
+                Enviar</button>
+            </div>
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

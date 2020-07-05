@@ -1,0 +1,54 @@
+.login-wrap{
+  width:400px;
+  margin: 0 auto;
+  margin-top:0px;
+  border:1px solid #eee;
+  padding:15px;
+  background: #f8f8f8;
+  border-radius: 4px;
+}
+
+.row {
+      margin-top: 50px; 
+}
+
+.form-group.last { margin-bottom:0px; }
+
+.my-dropdown-toggle::after {
+    content: none;
+}
+
+select.dropdown{
+  -moz-appearance: none;
+   -webkit-appearance: none;
+   appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.pr-1 {
+padding-right: 1px;
+
+}
+.pl-1 {
+padding-left:  1px;
+
+}
+
+.pl-td {
+padding-top:  7px;
+padding-bottom:   7px;
+margin-left: 10px;
+}
+
+.marg-0 {
+
+  margin-bottom:  0px;
+}
+
+#desc {
+
+    resize: none;
+}
