@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="./css/user.css">
+  <script type="text/javascript" src="js/code.js"></script>
+
+  <title>User</title>
+</head>
+<body>
+
+  <div class="login-page">
+    <div class="form">
+
+      <form class="login-form">
+        <h1>Crea tu cuenta</h1>
+
+
+        <input type="text" placeholder="Nombre" oninvalid="max_25(this);"
+        oninput="this.setCustomValidity('')"   pattern=".{1,25}" required/>
+
+        <input type="text" placeholder="Apellido" oninvalid="max_25(this);"
+        oninput="this.setCustomValidity('')"   pattern=".{1,25}" required/>
+
+        <input type="text" placeholder="Direccion" oninvalid="this.setCustomValidity('Invalido')"
+        oninput="this.setCustomValidity('')"   pattern="^(cll|cra|av|anv|trans).*" required/>
+
+        <input type="text" placeholder="Ccusuario" required/>
+
+        <input type="password" placeholder="Ccpassword" required/>
+
+        <input type="email" placeholder="Email" required/>
+
+        <input type="number" placeholder="Telefono" required/>
+
+
+        <button>Login</button>
+        <p class="message">Ya tienes una cuenta? <a href="#">Inicia sesion</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+
+
+</html>
