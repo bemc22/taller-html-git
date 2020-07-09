@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/usermaterialize.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style media="screen">
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+
+</style>
+
+  <title>Autos</title>
+  </head>
+
+  <body>
+    <div class="section"></div>
+    <main>
+      <center>
+
+
+        <div class="container">
+          <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE; width: 50em;">
+
+            <form class="col s12" method="post">
+
+
+                <h4 style="margin-bottom: 40px;">Crea tu cuenta</h4>
+
+
+
+
+                <div class='input-field col s12'>
+                  <input class='validate' type='text' name='text' id='text3' />
+                  <label for='text3'>Nombre</label>
+                </div>
+
+
+                <div class='input-field col s12'>
+                  <input class='validate' type='text' name='text' id='text4' />
+                  <label for='text4'>Apellido</label>
+                </div>
+
+                <div class='input-field col s12'>
+                  <input class='validate' type='text' name='text' id='text5' />
+                  <label for='text5'>Direccion</label>
+                </div>
+                <div class='input-field col s12'>
+                    <input class='validate' type='text' name='text' id='text6' />
+                    <label for='text6'>CCusario</label>
+                  </div>
+
+                  <div class='input-field col s12'>
+                    <input class='validate' type='password' name='text' id='text7' />
+                    <label for='text7'>CCpassword</label>
+                  </div>
+
+                  <div class='input-field col s12'>
+                    <input class='validate' type='email' name='text' id='text8' />
+                    <label for='text8'>Email</label>
+                  </div>
+
+                   <div class='input-field col s12'>
+                  <input class='validate' type='tel' name='text' id='text9' />
+                  <label for='text9'>Telefono</label>
+                </div>
+                <center>
+                    <div class='row'>
+                      <button type='submit' name='btn_login' class='col s4 offset-s4  btn btn-large waves-effect teal'>Enviar</button>
+                    </div>
+                  </center>
+    
+    
+
+
+
+
+              </div>
+
+             
+
+
+
+            </form>
+          </div>
+        </div>
+      </center>
+
+      <div class="section"></div>
+      <div class="section"></div>
+    </main>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('.datepicker').datepicker();
+    });
+    $(document).ready(function(){
+      $('select').formSelect();
+    });
+
+    $(document).ready(function() {
+    M.updateTextFields();
+  });
+
+</script>
+
+
+
+  </body>
+
+  </html>
