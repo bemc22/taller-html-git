@@ -28,7 +28,12 @@
 
         <input type="text" placeholder="Ccusuario" required/>
 
-        <input type="password" placeholder="Ccpassword" required/>
+        <input type="password" placeholder="Contraseña" oninvalid="pass(this);" id="password"
+        oninput="this.setCustomValidity('')"   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{12,25}$" required/>
+
+
+        <input type="password" placeholder="Confirmar contraseña"
+          oninput="confirm(this)"  required/>
 
         <input type="email" placeholder="Email" required/>
 
