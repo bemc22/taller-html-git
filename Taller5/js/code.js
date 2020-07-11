@@ -32,5 +32,13 @@ function confirm(element) {
   console.log(element.pattern );
   console.log(element.checkValidity());
 
+}
 
+function pass(element) {
+
+  let text = element.value;
+  if (text.length >120 ) {
+      element.setCustomValidity('Longitud Maxima 120 Caracteres')
+
+  }
 }

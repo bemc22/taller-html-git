@@ -35,11 +35,52 @@
         <input type="password" placeholder="Confirmar contraseña"
           oninput="confirm(this)"  required/>
 
-        <input type="email" placeholder="Email" required/>
+        <input type="email" placeholder="Email" oninvalid="email(this);"
+        oninput="this.setCustomValidity('')"   pattern=".{1,120}" required/>
 
         <input type="number" placeholder="Telefono" required/>
 
+        <br>
+        <br>
 
+        <button type="button" class="collapsible">Gustos Coche</button>
+       <div class="content">
+
+        <br>
+
+         <select name="select">
+           <option  selected>Color</option>
+           <option >Amarrillo</option>
+           <option >Azul</option>
+           <option >Rojo</option>
+         </select>
+
+         <select name="select">
+           <option  selected>Marca</option>
+           <option >Maserati</option>
+           <option >BMW</option>
+           <option >Ford</option>
+         </select>
+
+         <select name="select">
+           <option  selected>Estilo</option>
+           <option >Deportivo</option>
+           <option >Urbano</option>
+           <option >Familiar</option>
+         </select>
+
+          <p id="value">Precio dispuesto a pagar: <span id="demo"> </span>k $ </p>
+          <div class="slidecontainer">
+          <input type="range" min="10" max="500" value="50" class="slider" id="myRange">
+
+        </div>
+
+       </div>
+
+
+
+        <br>
+        <br>
         <button>Login</button>
         <p class="message">Ya tienes una cuenta? <a href="#">Inicia sesion</a></p>
       </form>
@@ -47,5 +88,30 @@
   </div>
 </body>
 
+<script type="text/javascript">
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
 </html>
