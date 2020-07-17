@@ -4,6 +4,8 @@
   width: 360px;
   padding: 2% 0 0;
   margin: auto;
+ 
+  ;
 }
 
  .form p {
@@ -17,7 +19,8 @@
    padding: 0px;
    font-family: "Roboto";
    font-size: 36 px;
-   font-weight: lighter;
+   font-weight: normal;
+   color: white
  }
 
  input[type=number] {
@@ -27,12 +30,12 @@
 .form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background:rgb(0,0,0,0.8);
   max-width: 360px;
-  margin: 0 auto 100px;
+  margin: 0 auto 10px;
   padding: 45px;
   text-align: left;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  
 }
 .form input {
   font-family: "Roboto", sans-serif;
@@ -41,9 +44,13 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
+  margin: 0px 10px 30px -8px;
+ padding: 8px;
+ color: white;
+  
+  background-color: transparent;
+  
+  border-color: white;
   font-size: 14px;
 }
 
@@ -63,13 +70,14 @@
 .form button {
   font-family: "Roboto", sans-serif;
   outline: 0;
-  background: #8503ff;
+  background:#b42135;
   width: 100%;
   border: 0;
   padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
   cursor: pointer;
+  text-align: center;
 
 }
 
@@ -79,16 +87,16 @@
   font-size: 12px;
 }
 .form .message a {
-  color: #8503ff;
+  color:#ffffff ;
   text-decoration: none;
 }
 
 .form select {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  background: #8503ff ;
+  background: #b42135 ;
   border: 0;
-  margin: 0 0 10px;
+  margin: 0 3px 15px;
   padding: 8px;
   color: #FFFFFF;
   font-size: 12px;
@@ -96,11 +104,15 @@
 }
 
 body {
-  background: #4fc3f7 ; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right,#4fc3f7 , #7e57c2 );
-  background: -moz-linear-gradient(right, #4fc3f7 , #7e57c2 );
-  background: -o-linear-gradient(right, #4fc3f7 , #7e57c2 );
-  background: linear-gradient(to left, #4fc3f7 , #7e57c2);
+  
+
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url(../img/background.jpg);
+    
+  -webkit-background-size: cover;
+  -moz-background-size:  cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -109,8 +121,8 @@ body {
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
- background-color: #eee;
- color: #444;
+ background-color: rgb(255, 255, 255);
+ color: white;
  cursor: pointer;
  padding: 18px;
  width: 100%;
@@ -128,5 +140,31 @@ body {
  padding: 0 18px;
  display: none;
  overflow: hidden;
- background-color: #f1f1f1;
+ background-color:transparent;
 }
+#value{
+  color: white;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #b42135;
+  cursor: pointer;
+}
+
