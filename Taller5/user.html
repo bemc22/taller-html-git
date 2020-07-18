@@ -23,7 +23,7 @@
         <input type="text" placeholder="Apellido" oninvalid="max_25(this);"
         oninput="this.setCustomValidity('')"   pattern=".{1,25}" required/>
 
-        <input type="text" placeholder="Direccion" oninvalid="this.setCustomValidity('Invalido')"
+        <input type="text" placeholder="Direccion" oninvalid="substringdireccion(this)"
         oninput="this.setCustomValidity('')"   pattern="^(cll|cra|av|anv|trans).*" required/>
 
         <input type="text" placeholder="CC" required/>
@@ -38,7 +38,8 @@
         <input type="email" placeholder="Email" oninvalid="email(this);"
         oninput="this.setCustomValidity('')"   pattern=".{1,120}" required/>
 
-        <input type="tel" placeholder="Telefono" required/>
+        <input type="number" placeholder="Telefono" required/>
+        
 
         <br>
         <br>
