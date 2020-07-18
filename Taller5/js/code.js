@@ -14,7 +14,7 @@ function pass(element) {
 
   let text = element.value;
   if (text.length < 15 || text.length > 25 ) {
-      element.setCustomValidity('La longitud debe ser de minimo 15 caracteres y maximo 20 caracteres')
+      element.setCustomValidity('La longitud debe ser de minimo 15 caracteres y maximo 20 caracteres ,debe contener mayúsculas , numeros, letras y/o los siguientes caracteres [#,%,/,&].')
 
   }
 }
@@ -34,7 +34,7 @@ function confirm(element) {
 
 }
 
-function pass(element) {
+function email(element) {
 
   let text = element.value;
   if (text.length >120 ) {
@@ -42,6 +42,7 @@ function pass(element) {
 
   }
 }
+
 function substringdireccion(element) {
 
   let text = element.value;
