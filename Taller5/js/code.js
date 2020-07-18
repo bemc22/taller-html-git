@@ -45,30 +45,14 @@ function pass(element) {
 function substringdireccion(element) {
 
   let text = element.value;
-  
-  
-  if (text.length == 0 ) {
-      element.setCustomValidity('Rellene este campo');
+  let check = /^(cll|cra|av|anv|trans).*/.test(text);
 
-  } 
-  if( text.indexOf("cll") > -1 == false){
+  console.log(check);
+
+  if(!check){
     element.setCustomValidity('El campo debe comenzar con cll, av, avn, cra, trans');
-    
-  }
-  if( text.indexOf("cra") > -1 == false){
-    element.setCustomValidity('El campo debe comenzar con cll, av, avn, cra, trans');
-    
-  }
-  if( text.indexOf("av") > -1 == false){
-    element.setCustomValidity('El campo debe comenzar con cll, av, avn, cra, trans');
-    
-  }
-  if( text.indexOf("avn") > -1 == false){
-    element.setCustomValidity('El campo debe comenzar con cll, av, avn, cra, trans');
-    
+
   }
 
-  
- 
+
 }
-
