@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 2% 0 0;
+  margin: auto;
+ 
+  ;
+}
+
+ .form p {
+   text-align: center;
+   padding: 0px;
+   font-family: "Roboto", sans-serif;
+ }
+ .form h1 {
+
+  text-align: center;
+   padding: 0px;
+   font-family: "Roboto";
+   font-size: 36 px;
+   font-weight: normal;
+   color: white
+ }
+
+ input[type=number] {
+   -moz-appearance: textfield;
+ }
+
+.form {
+  position: relative;
+  z-index: 1;
+  background:rgb(0,0,0,0.8);
+  max-width: 360px;
+  margin: 0 auto 10px;
+  padding: 45px;
+  text-align: left;
+  
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  border-bottom:  1px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 0px 10px 30px -8px;
+ padding: 8px;
+ color: white;
+  
+  background-color: transparent;
+  
+  border-color: white;
+  font-size: 14px;
+}
+
+#myRange  {
+    margin: 0 0 0px;
+}
+
+#value {
+  margin: 8px;
+  font-size: 14px;
+}
+
+.form div.gustos {
+  text-align: center;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background:#b42135;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color:#ffffff ;
+  text-decoration: none;
+}
+
+.form select {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: #b42135 ;
+  border: 0;
+  margin: 0 3px 15px;
+  padding: 8px;
+  color: #FFFFFF;
+  font-size: 12px;
+  -webkit-appearance: none;
+}
+
+body {
+  
+
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url(../img/background.jpg);
+    
+  -webkit-background-size: cover;
+  -moz-background-size:  cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+ background-color: rgb(255, 255, 255);
+ color: white;
+ cursor: pointer;
+ padding: 18px;
+ width: 100%;
+ border: none;
+ text-align: left;
+ outline: none;
+ font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+ padding: 0 18px;
+ display: none;
+ overflow: hidden;
+ background-color:transparent;
+}
+#value{
+  color: white;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #b42135;
+  cursor: pointer;
+}
+
