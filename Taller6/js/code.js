@@ -57,16 +57,3 @@ function substringdireccion(element) {
 
 
 }
-
-
-
-
- 
-var ourRequest = new XMLHttpRequest();
-ourRequest.open('GET','https://jsonplaceholder.typicode.com/users');
-
-ourRequest.onload = function(){
-    var ourData = JSON.parse(ourRequest.responseText);
-    console.log(ourData);
-};
-ourRequest.send();
