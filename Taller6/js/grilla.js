@@ -42,16 +42,19 @@ function json2table(json, $table) {
       var objeto = row[colName];
       var temp = typeof(objeto);
 
-      if(temp == 'object'){
+
+      if(colName == 'company'){
+        text = '';
+        nombres = Object.keys(objeto);
+
+        text = objeto[nombres[0]];
+      }else if (colName=='address') {
         text = '';
         nombres = Object.keys(objeto);
 
         nombres.map(  function(nom){
-
-          if (typeof(objeto[nom]) != 'object') {
-            text += objeto[nom] + ' ';
-          }
-
+          if ( (typeof(objeto[nom]) != 'object' ) && nom != 'zipcode') {
+            text += objeto[nom] + ' ';        }
         });
       }
 
