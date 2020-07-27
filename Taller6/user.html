@@ -44,40 +44,18 @@
         <br>
         <br>
 
-        <button type="button" class="collapsible">Gustos Coche</button>
-       <div class="content">
+        <button type="button" class="collapsible">Ha sufrido Enfermedades?</button>
 
-        <br>
-        <div class="gustos">
-         <select name="select">
-           <option  selected>Color</option>
-           <option >Amarrillo</option>
-           <option >Azul</option>
-           <option >Rojo</option>
-         </select>
 
-         <select name="select">
-           <option  selected>Marca</option>
-           <option >Maserati</option>
-           <option >BMW</option>
-           <option >Ford</option>
-         </select>
+       <div class="content" id="content">
 
-         <select name="select">
-           <option  selected>Estilo</option>
-           <option >Deportivo</option>
-           <option >Urbano</option>
-           <option >Familiar</option>
-         </select>
+          <p id="value">Enfermedades Congagiosas?</p>
 
-       </div>
-
-          <p id="value">Precio dispuesto a pagar: <span id="demo"> </span>k $ </p>
-          <div class="slidecontainer">
-          <input type="range" min="10" max="500" value="50" class="slider" id="myRange">
-
-        </div>
-
+          <button type="button" id="option" name="button" onclick="show_area()">No</button>
+          <div  id="enf" style="display:none;">
+            <br>
+            <textarea name="name"  id="area" rows="8"  placeholder="Cuales?"></textarea>
+          </div>
        </div>
 
 
@@ -86,6 +64,10 @@
         <br>
         <button>Login</button>
         <p class="message">Ya tienes una cuenta? <a href="#">Inicia sesion</a></p>
+
+
+
+
       </form>
     </div>
   </div>
@@ -116,5 +98,19 @@ output.innerHTML = slider.value; // Display the default slider value
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
+
+
+function show_area() {
+  var x = document.getElementById("enf");
+  var btn = document.getElementById("option");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    btn.innerHTML  = "Si";
+  } else {
+    x.style.display = "none";
+      btn.innerHTML  = "No"
+  }
+}
+
 </script>
 </html>
