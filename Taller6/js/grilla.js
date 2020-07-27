@@ -31,17 +31,12 @@ function json2table(json, $table) {
     headerRow += '<th>' + capitalizeFirstLetter(col) + '</th>';
 
   });
-
   json.map(function(row) {
-
     bodyRows += '<tr>';
-
     cols.map(function(colName) {
-
       var text = row[colName];
       var objeto = row[colName];
       var temp = typeof(objeto);
-
 
       if(colName == 'company'){
         text = '';
@@ -51,13 +46,11 @@ function json2table(json, $table) {
       }else if (colName=='address') {
         text = '';
         nombres = Object.keys(objeto);
-
         nombres.map(  function(nom){
           if ( (typeof(objeto[nom]) != 'object' ) && nom != 'zipcode') {
             text += objeto[nom] + ' ';        }
         });
       }
-
       bodyRows += '<td>' + text + '</td>';
     })
     bodyRows += '</tr>';
@@ -66,3 +59,25 @@ function json2table(json, $table) {
   $table.find('thead tr').append(headerRow);
   $table.find('tbody').append(bodyRows);
 }
+
+
+function filtrar(number, name_id) {
+      var input, filter, table, tr, td, i, txtValue;
+
+      // input = document.getElementById(name_id);
+      input = $("#" + name_id)[0];
+      filter = input.value.toUpperCase();
+      table = $("#table")[0];
+      tr =  $(table).find("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = $(tr[i]).find("td")[number];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
