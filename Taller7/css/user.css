@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 2% 0 0;
+  margin: auto;
+
+  ;
+}
+
+#option{
+  width: 30%;
+  height: 10%;
+}
+
+.form p {
+ text-align: center;
+ padding: 0px;
+ font-family: "Roboto", sans-serif;
+ color: white;
+}
+
+#lugar {
+  text-align: left;
+  color: white;
+  margin: auto auto 15px auto;
+
+}
+
+#lugar_res {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+ .form h1 {
+
+  text-align: center;
+   padding: 0px;
+   font-family: "Roboto";
+   font-size: 36 px;
+   font-weight: normal;
+   color: white
+ }
+
+ input[type=number] {
+   -moz-appearance: textfield;
+ }
+
+.form {
+  position: relative;
+  z-index: 1;
+  background:rgb(0,0,0,0.8);
+  max-width: 360px;
+  margin: 0 auto 10px;
+  padding: 45px;
+  text-align: left;
+
+}
+  .form input {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  border-bottom:  1px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 0px 10px 30px -8px;
+  padding: 8px;
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background:#b42135;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color:#ffffff ;
+  text-decoration: none;
+}
+
+.form select {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: #b42135 ;
+  border: 0;
+  margin: 0 3px 15px;
+  padding: 8px;
+  color: #FFFFFF;
+  font-size: 12px;
+  -webkit-appearance: none;
+  max-width: 120px;
+}
+
+body {
+  background: #181818 ; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right,#181818 , #313131 );
+  background: -moz-linear-gradient(right, #181818 , #313131 );
+  background: -o-linear-gradient(right, #181818 , #313131 );
+  background: linear-gradient(to left, #181818 , #313131);
+
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
