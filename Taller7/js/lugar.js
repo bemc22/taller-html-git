@@ -1,6 +1,5 @@
 
 let url = 'https://www.datos.gov.co/resource/xdk5-pm3f.json';
-
 window.onload = function(){
   $dep = $('#dep');
   let deps = new Set([]);
@@ -28,7 +27,6 @@ window.onload = function(){
     primer = document.createElement("option");
     primer.text = 'Municipio';
     $mun.append(primer);
-
     new_url = url + '?departamento=' + dep.value;
     fetch(new_url)
       .then(function(response) {
