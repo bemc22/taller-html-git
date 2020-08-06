@@ -5,7 +5,7 @@ window.onload = function(){
   let deps = new Set([]);
   fetch(url)
     .then(function(response) {
-      return response.json();
+      return response.json(); 
     })
     .then(function(myJson) {
       myJson.forEach((item, i) => {

@@ -27,7 +27,7 @@ function confirm(element) {
 
 function email(element) {
   let text = element.value;
-  if (text.length >120 ) {
+  if (text.length > 120 ) {
       element.setCustomValidity('Longitud Maxima 120 Caracteres');
   }
 }
