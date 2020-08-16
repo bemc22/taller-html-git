@@ -5,8 +5,11 @@ from flask import render_template, request, redirect, url_for, flash
 
 @app.route('/')
 def Index():
-    all_data = Persona.query.all()
-    return render_template("index.html", personas=all_data)
+    all_data = db.session.query(Persona,Tipodocumento,Ciudad).join(Tipodocumento).join(Ciudad).all()
+    documentos_data = Tipodocumento.query.all()
+    ciudades = Ciudad.query.all()
+
+    return render_template("index.html.jinja", personas=all_data, documents = documentos_data, cities = ciudades)
 
 
 @app.route('/insert', methods=['POST'])
@@ -25,11 +28,8 @@ def insert():
         password = request.form['password']
 
 
-        name =request.form['name']
-        email = request.form['email']
-        phone = request.form['phone']
-
-        my_data = Persona(name,email,phone)
+        my_data = Persona(nombres,apellidos,id_tipodocumento,documento,
+        lugar_residencia,fecha_nacimiento,email,telefono,usuario,password)
         db.session.add(my_data)
         db.session.commit()
 
@@ -42,12 +42,16 @@ def update():
     if request.method == 'POST':
         my_data = Persona.query.get(request.form.get('id'))
 
-        my_data.name = request.form['name']
+        my_data.nombres = request.form['nombres']
+        my_data.apellidos = request.form['apellidos']
+        my_data.id_tipodocumento = request.form['id_tipodocumento']
+        my_data.documento = request.form['documento']
+        my_data.lugar_residencia = request.form['lugar_residencia']
         my_data.email = request.form['email']
-        my_data.phone = request.form['phone']
+        my_data.telefono = request.form['telefono']
 
         db.session.commit()
-        flash("Employee Update Successfully")
+        flash("Información actualizada exitosamente ")
         return redirect(url_for('Index'))
 
 
@@ -57,5 +61,5 @@ def delete(id):
     my_data = Persona.query.get(id)
     db.session.delete(my_data)
     db.session.commit()
-    flash("Employee Deleted Successfully")
+    flash("Usuario eliminado Exitosamente")
     return redirect(url_for('Index'))
