@@ -71,12 +71,13 @@
 
               <!--  /update/{{row.id}}  /delete/{{row.id}}   -->
               <a href="/update/{{persona.id}}" class="btn btn-outline-primary btn-xs" data-toggle="modal" data-target="#modaledit{{persona.id}}">Editar</a>
-              <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#confirm_eliminar">
+
+              <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#confirm_eliminar{{persona.id}}">
                 Eliminar
               </button>
 
               <!-- Modal -->
-              <div class="modal fade" id="confirm_eliminar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal fade" id="confirm_eliminar{{persona.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
