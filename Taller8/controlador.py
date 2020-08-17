@@ -27,7 +27,6 @@ def insert():
         usuario = request.form['usuario']
         password = request.form['password']
 
-
         my_data = Persona(nombres,apellidos,id_tipodocumento,documento,
         lugar_residencia,fecha_nacimiento,email,telefono,usuario,password)
         db.session.add(my_data)
