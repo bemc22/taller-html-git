@@ -29,6 +29,7 @@ def insert():
 
         my_data = Persona(nombres,apellidos,id_tipodocumento,documento,
         lugar_residencia,fecha_nacimiento,email,telefono,usuario,password)
+
         db.session.add(my_data)
         db.session.commit()
 
@@ -57,7 +58,6 @@ def update():
 
 @app.route('/delete/<id>/', methods = ['GET' , 'POST'])
 def delete(id):
-    print(id)
     my_data = Persona.query.get(id)
     db.session.delete(my_data)
     db.session.commit()
