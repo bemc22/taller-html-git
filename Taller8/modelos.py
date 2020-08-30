@@ -23,7 +23,6 @@ class Tipodocumento(db.Model):
 
 
 class Persona(db.Model):
-
     id = db.Column(db.Integer, primary_key = True)
     nombres = db.Column(db.String(100))
     apellidos = db.Column(db.String(100))
