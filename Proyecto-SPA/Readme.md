@@ -1,4 +1,4 @@
 ## Proyecto SPA
 
-Frontend: spa-angular 
-Backend: spring-spa
+- Frontend: spa-angular 
+- Backend: spring-spa
