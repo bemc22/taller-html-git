@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-header">
+      <h3>Personas</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+          <tr class="text-center">
+            <th>id</th>
+            <th>nombre</th>
+            <th>apellido</th>
+            <th>tipodocumento</th>
+            <th>documento</th>
+            <th>lugar_residencia</th>
+            <th>fecha_nacimiento</th>
+            <th>email</th>
+            <th>telefono</th>
+            <th>usuario</th>
+            <th>password</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let persona of personas"  class="text-center">
+            <td>{{persona.id}}</td>
+            <td>{{persona.nombre}}</td>
+            <td>{{persona.apellido}}</td>
+            <td>{{documentos[persona.id_tipodocumento]}}</td>
+            <td>{{persona.documento}}</td>
+            <td>{{lugares[persona.lugar_residencia]}}</td>
+            <td>{{persona.fecha_nacimiento}}</td>
+            <td>{{persona.email}}</td>
+            <td>{{persona.telefono}}</td>
+            <td>{{persona.usuario}}</td>
+            <td>{{persona.password}}</td>
+            <td>
+              <button (click)="Editar(persona)" class="btn btn-outline-primary">Editar</button>
+              <button (click)="Delete(persona)" class="btn btn-danger" style="margin-left:10px">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
